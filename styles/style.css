@@ -9,9 +9,9 @@
 }
 
 body {
-    min-height: 110vh; 
+    min-height: 100vh; 
     overflow-x: hidden; 
-    background: linear-gradient(#2b1055, #2b1055);
+    background: linear-gradient(#f5c2c5, #2b1055);
 }
 header {
     position: absolute; 
@@ -88,6 +88,10 @@ section img {
     pointer-events: none; 
 }
 
+#section2 {
+    min-height: 100vh; 
+}
+
 section img#saturn {
     mix-blend-mode: screen;
 }
@@ -98,6 +102,10 @@ section img#mountains_front {
 
 section img#front_ground{
     z-index: 11; 
+}
+
+section img#clouds {
+    right: -50%; 
 }
 
 section img#front_rocks {
@@ -114,7 +122,9 @@ section img#middle {
 
 section img#front{
     z-index: 12; 
+    top: 80; 
 }
+
 
 #section2::after {
     content: ''; 
