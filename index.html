@@ -1,1 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>explore</title>
+
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+</head>
+
+<body id="body">
+    <header>
+        <a href="#" class="logo">hey there</a>
+        <ul>
+            <li> <a href="#sec" class="active">explore</a> </li>
+        </ul>
+    </header>
+    <section>
+        <img src="images/background.png" id="background">
+        <img src="images/stars.png" id="stars">
+        <img src="images/saturn.png" id="saturn">
+        <img src="images/planets.png" id="planets">
+        <img src="images/last mountains.png" id="mountains_behind">
+        <h2 id="text"> welcome </h2>
+        <img src="images/mid mountains.png" id="mountains_front">
+        <img src="images/front ground.png" id="front_ground">
+        <img src="images/front rocks.png" id="front_rocks">
+    </section>
+    <div class="sec" id="sec">
+    </div>
+    <section id="section2">
+        <img src="images/gradient.png" id="gradient">
+        <img src="images/clouds.png" id="clouds">
+        <img src="images/bluemountain.png" id="blue_mountain">
+        <!-- <h2 id="text"> Moon Light </h2> -->
+        <img src="images/middle.png" id="middle">
+        <img src="images/front.png" id="front">
+
+    
+    <script>
+        let stars = document.getElementById('stars');
+        let saturn = document.getElementById('saturn');
+        let planets = document.getElementById('planets');
+        let mountains_behind = document.getElementById('mountains_behind');
+        let text = document.getElementById('text');
+        let btn = document.getElementById('btn');
+        let mountains_front = document.getElementById('mountains_front');
+        let front_ground = document.getElementById('front_ground');
+        let front_rocks = document.getElementById('front_rocks');
+        let header = document.querySelector('header');
+
+        let clouds = document.getElementById('clouds'); 
+        let blue_mountain = document.getElementById('blue_mountain'); 
+        let middle = document.getElementById('middle'); 
+        let front = document.getElementById('front'); 
+
+        window.addEventListener('scroll', function () {
+            let value = window.scrollY;
+            stars.style.left = value * 0.25 + 'px';
+            saturn.style.top = value * 1.05 + 'px';
+            planets.style.top = value * 1.05 + 'px';
+            mountains_behind.style.top = value * 0.5 + 'px';
+            mountains_front.style.top = value * 0.3 + 'px';
+            front_ground.style.top = value * 0.1 + 'px';
+            front_rocks.style.top = value * 0 + 'px';
+            text.style.marginRight = value * 4 + 'px';
+            text.style.marginTop = value * 1.5 + 'px';
+            btn.style.marginTop = value * 1.5 + 'px';
+            header.style.top = value * 0.5 + 'px';
+
+            clouds.style.left = value * 0.25 + 'px';
+            blue_mountain.style.top = value * 0.5 + 'px';
+            middle.style.top = value * 0.3 + 'px';
+            front.style.top = value * 0 + 'px';
+        })
+    </script>
+</body>
+
+</html>
