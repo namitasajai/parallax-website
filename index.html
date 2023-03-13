@@ -18,24 +18,27 @@
         </ul> -->
     </header>
     <section>
-        <img src="images/background.png" id="background">
-        <img src="images/stars.png" id="stars">
-        <img src="images/saturn.png" id="saturn">
-        <img src="images/planets.png" id="planets">
-        <img src="images/last mountains.png" id="mountains_behind">
+        <img src="images/background.png" alt="dark-blue streaky night sky in outer space" id="background">
+        <img src="images/stars.png" alt="stars" id="stars">
+        <img src="images/saturn.png" alt="saturn or planet with rings" id="saturn">
+        <img src="images/planets.png" alt="secondary planets" id="planets">
+        <img src="images/last mountains.png" alt="rocks in the distance" id="mountains_behind">
         <h2 id="text"> welcome </h2>
-        <img src="images/mid mountains.png" id="mountains_front">
-        <img src="images/front ground.png" id="front_ground">
-        <img src="images/front rocks.png" id="front_rocks">
+        <img src="images/mid mountains.png" alt="rocks surrounding ravine" id="mountains_front">
+        <img src="images/front ground.png" alt="ground overlooking space" id="front_ground">
+        <img src="images/front rocks.png" alt="closest line of rocks" id="front_rocks">
     </section>
     <div class="sec" id="sec">
+        <img src="images/extraclouds.png" alt="swarm of clouds amongst a gradient" id="extra_clouds">
     </div>
     <section id="section2">
-        <img src="images/gradient.png" id="gradient">
-        <img src="images/clouds.png" id="clouds">
-        <img src="images/bluemountain.png" id="blue_mountain">
-        <img src="images/middle.png" id="middle">
-        <img src="images/front.png" id="front">
+        <img src="images/plane.png" alt="pink plane" id="plane">
+        <img src="images/gradient.png" alt="pink sky overlooking land" id="gradient">
+        <img src="images/clouds.png" alt="more clouds" id="clouds">
+        <img src="images/bluemountain.png" alt="large blue mountain covered in snow" id="blue_mountain">
+        <img src="images/middle.png" alt="mountain scenery above river" id="middle">
+        <img src="images/front.png" alt="mountains at forefront of landscape" id="front">
+    </section>
 
     
     <script>
@@ -49,7 +52,8 @@
         let front_ground = document.getElementById('front_ground');
         let front_rocks = document.getElementById('front_rocks');
         let header = document.querySelector('header');
-
+        let extra_clouds = document.getElementById('extra_clouds'); 
+        let plane = document.getElementById('plane'); 
         let clouds = document.getElementById('clouds'); 
         let blue_mountain = document.getElementById('blue_mountain'); 
         let middle = document.getElementById('middle'); 
@@ -67,10 +71,11 @@
             text.style.marginRight = value * 4 + 'px';
             text.style.marginTop = value * 1.5 + 'px';
             header.style.top = value * 0.5 + 'px';
-            clouds.style.left = (value - 2100) * 0.4 + 'px';
+            extra_clouds.style.left = (value-1500) * 0.25 + 'px';
+            clouds.style.left = (value - 2000) * 0.25 + 'px';
             blue_mountain.style.top = (value - 2100) * 0.25 + 'px';
-            middle.style.top = (value - 2100) * 0.4 + 'px';
-            front.style.top = 70 + 'px'; 
+            middle.style.top = (value - 2200) * 0.4 + 'px';
+            front.style.top = 0 + 'px'; 
         })
 
         window.addEventListener('resize', function() {

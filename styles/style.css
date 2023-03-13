@@ -1,95 +1,98 @@
 @import url('https://fonts.googleapis.com/css2?family=Cardo&family=IBM+Plex+Serif&family=Josefin+Slab&family=Patrick+Hand+SC&family=Poppins:wght@600&family=Prata&family=Roboto+Condensed&display=swap');
-*
-{
-    margin: 0; 
-    padding: 0; 
-    box-sizing: border-box; 
-    font-family: 'Josefin Slab', sans-serif; 
-    scroll-behavior: smooth; 
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Slab', sans-serif;
+    scroll-behavior: smooth;
 }
 
 body {
-    min-height: 100vh; 
-    overflow-x: hidden; 
+    min-height: 100vh;
+    overflow-x: hidden;
     background: linear-gradient(#f5c2c5, #2b1055);
 }
+
 header {
-    position: absolute; 
-    top: 0; 
-    left: 0; 
-    width: 100%; 
-    padding: 30px 50px; 
-    display: flex; 
-    justify-content: space-between; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 50px;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
     z-index: 1000;
 }
 
 header .logo {
-    color: white; 
-    font-weight: 700; 
+    color: white;
+    font-weight: 700;
     text-decoration: none;
-    font-size: 2em; 
-    letter-spacing: 2px; 
+    font-size: 2em;
+    letter-spacing: 2px;
 }
 
 header ul {
-    display: flex; 
-    justify-content: center; 
-    align-items: center; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
 header ul li {
     list-style: none;
-    margin-left: 20px; 
+    margin-left: 20px;
 }
 
 header ul li a {
-    text-decoration: none; 
-    padding: 6px 15px; 
-    color: white; 
-    border-radius:20px; 
+    text-decoration: none;
+    padding: 6px 15px;
+    color: white;
+    border-radius: 20px;
 }
 
-header ul li a:hover, .active {
-    background: white; 
-    color: #2b1055; 
+header ul li a:hover,
+.active {
+    background: white;
+    color: #2b1055;
 
 }
 
 section {
-    position: relative; 
-    width: 100%; 
-    height: 100vh; 
-    padding: 100px; 
-    display: flex; 
-    justify-content: center; 
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
     align-items: center;
-    overflow: hidden; 
+    overflow: hidden;
 }
+
 section::after {
-    content: ''; 
-    position: absolute; 
-    bottom: 0; 
-    width: 100%; 
-    height: 100px; 
-    background: linear-gradient(to top, #1c0522, transparent); 
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top, #1c0522, transparent);
     z-index: 1000;
 }
 
 section img {
-    position: absolute; 
-    top: 0; 
-    left: 0; 
-    width: 100%; 
-    height: 100%; 
-    object-fit: cover; 
-    pointer-events: none; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
 }
 
 #section2 {
-    min-height: 100vh; 
+    min-height: 100vh;
 }
 
 section img#saturn {
@@ -97,79 +100,126 @@ section img#saturn {
 }
 
 section img#mountains_front {
-    z-index: 10; 
+    z-index: 10;
 }
 
-section img#front_ground{
-    z-index: 11; 
+section img#front_ground {
+    z-index: 11;
 }
 
 section img#clouds {
-    right: -50%; 
+    right: -50%;
+    min-height: 130vh;
+    min-width: 100vw;
+    z-index: 9; 
 }
 
 section img#front_rocks {
-    z-index: 12; 
+    z-index: 12;
 }
 
 section img#blue_mountain {
-    z-index: 10; 
+    z-index: 10;
 }
 
 section img#middle {
-    z-index: 11; 
+    z-index: 11;
 }
 
-section img#front{
-    z-index: 12; 
-    top: 80; 
+section img#front {
+    z-index: 12;
+    top: 80;
 }
 
 
 #section2::after {
-    content: ''; 
-    position: absolute; 
-    bottom: 0; 
-    width: 100%; 
-    height: 100px; 
-    background: linear-gradient(to top, #f5c2c5, transparent); 
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top, #f5c2c5, transparent);
     z-index: 1000;
+    overflow-x: hidden;
 }
 
 
 #text {
-    position: absolute; 
-    color: white; 
-    white-space: nowrap; 
-    font-size: 7.5vw; 
+    position: absolute;
+    color: white;
+    white-space: nowrap;
+    font-size: 7.5vw;
     z-index: 11;
-    right: -50%; 
+    right: -50%;
 }
 
 
 .sec {
-    position: relative; 
-    padding: 100px; 
-    background: linear-gradient(#1c0522, #f5c2c5);
+    position: relative;
+    padding: 100px;
+    background: linear-gradient(#1c0522, #ffbec3);
     min-height: 200vh;
+    overflow-x: hidden;
 }
 
 .sec h2 {
-    font-size: 3.5em; 
-    margin-bottom: 10px; 
-    color: white; 
+    font-size: 3.5em;
+    margin-bottom: 10px;
+    color: white;
 }
 
 .sec p {
-    font-size: 1.2em; 
-    color: white; 
+    font-size: 1.2em;
+    color: white;
+}
+
+.sec img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    margin-top: 50%;
+    transform: scaleX(1);
+    pointer-events: none;
 }
 
 
 
 .sec2 {
-    position: relative; 
-    padding: 100px; 
-    background: linear-gradient(#f5c2c5, #1c0522);
+    position: relative;
+    padding: 100px;
+    background: linear-gradient(#ffbec3, #1c0522);
     min-height: 100vh;
+    overflow-x: hidden;
+}
+
+
+#plane {
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    offset-path: path("M20,20 C20,200 800,-300 2000,200");
+    /* animation: move 8000ms reverse  ease-in-out; */
+    margin-left: -20%; 
+    margin-top: 100px; 
+    width: fit-content; 
+    height: fit-content;
+    transform: scale(0.5); 
+    z-index: 8; 
+}
+
+#section2:hover > :nth-child(1) {
+    offset-path: path("M20,20 C20,200 800,-300 2000,200");
+    animation: move 8000ms reverse infinite ease-in-out;
+}
+
+@keyframes move {
+    0% {
+        offset-distance: 0%;
+    }
+
+    100% {
+        offset-distance: 100%;
+    }
 }
