@@ -108,7 +108,7 @@ section img#front_ground {
 }
 
 section img#clouds {
-    right: -50%;
+    margin-left: -1%; 
     min-height: 130vh;
     min-width: 100vw;
     z-index: 9; 
